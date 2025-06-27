@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import {User} from "../service/student"
+import { User } from "../service/student";
 
 function Students() {
   const [students, setStudents] = useState([]);
@@ -81,7 +81,14 @@ function Students() {
             {editId ? "Edit Student" : "Add Student"}
           </h2>
           <form onSubmit={handleSubmit} className="space-y-3">
-            {["first_name", "last_name", "email", "jshshr", "dob", "address"].map((field) => (
+            {[
+              "first_name",
+              "last_name",
+              "email",
+              "jshshr",
+              "dob",
+              "address",
+            ].map((field) => (
               <input
                 key={field}
                 type="text"

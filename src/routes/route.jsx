@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 
 import SignIn from "../auth/SignIn";
+import SignIn_2 from "../auth/SignIn_2";
 import SignUp from "../auth/SignUp";
 import Index from "../pages/Index";
 import User from "../pages/User";
@@ -18,6 +19,7 @@ const Router = () => {
     createRoutesFromElements(
       <Route path="/" element={<App />}>
         <Route index element={<SignIn />} />
+        <Route path="signin_2" element={<SignIn_2 />} />
         <Route path="signup" element={<SignUp />} />
         <Route path="logs" element={<Index />}>
           <Route path="users" element={<User />} />
