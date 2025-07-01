@@ -7,5 +7,7 @@ const Index = lazy(() => import("./Index"));
 const User = lazy(() => import("./User"));
 const Students = lazy(() => import("./Students"));
 const Statictics = lazy(() => import("./Statictics"));
+const Driver = lazy(() => import("./Driver"));
+const Head = lazy(() => import("./lang/Head"));
 
-export { SignIn, SignIn_2, SignUp, Index, User, Students, Statictics };
+export { SignIn, SignIn_2, SignUp, Index, User, Students, Statictics, Driver, Head };

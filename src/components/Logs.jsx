@@ -9,7 +9,7 @@ function Logs() {
   const isOnlyApiPath = location.pathname === "/logs";
 
   return (
-    <div className="min-h-screen bg-gray-100 p-4">
+    <div className="min-h-screen bg-gray-100">
       {isOnlyApiPath && (
         <div className="mb-6">
           <Home />
