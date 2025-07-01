@@ -11,8 +11,8 @@ import User from "../pages/User";
 import Students from "../pages/Students";
 import Post from "../pages/Post";
 import Products from "../pages/Products";
-import SignIn from "../auth/SignIn";
-import SignUp from "../auth/SignUp";
+import SignIn from "../pages/auth/SignIn";
+import SignUp from "../pages/auth/SignUp";
 
 const { Header, Content, Footer, Sider } = Layout;
 

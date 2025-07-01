@@ -1,6 +1,7 @@
 import { lazy } from "react";
 const App = lazy(()=> import("../App"))
 import {SignIn, SignIn_2, SignUp, Index, User, Students, Statictics} from "@pages"
+import {Logs} from "@components"
 
 import {
   createBrowserRouter,
@@ -16,7 +17,7 @@ const Router = () => {
         {/* <Route path="main" element={<Main />} /> */}
         <Route path="signin_2" element={<SignIn_2 />} />
         <Route path="signup" element={<SignUp />} />
-        <Route path="logs" element={<Index />}>
+        <Route path="logs" element={<Logs />}>
           <Route path="users" element={<User />} />
           <Route path="students" element={<Students />} />
           <Route path="statictics" element={<Statictics />} />
